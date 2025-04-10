@@ -53,7 +53,7 @@ class ProductServiceApplicationTests {
 				.body("price", Matchers.is(productRequest.price().intValueExact()));
 	}
 	private ProductRequest getProductRequest() {
-		return new ProductRequest("iPhone 13", "iPhone 13", BigDecimal.valueOf(1200));
+		return new ProductRequest("iPhone 13", "iPhone 13","sku", BigDecimal.valueOf(1200));
 	}
 
 }
